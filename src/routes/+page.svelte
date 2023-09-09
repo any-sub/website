@@ -5,4 +5,3 @@
 {#each data.jobs as job}
   <div>{job.id}</div>
 {/each}
-
