@@ -1,22 +1,11 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "labels": [
-    "dependencies"
-  ],
-  "ignoreDeps": [
-    "node-fetch"
-  ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "automerge": true
-    }
-  ]
+	"extends": ["config:base"],
+	"labels": ["dependencies"],
+	"ignoreDeps": ["node-fetch"],
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"automerge": true
+		}
+	]
 }
