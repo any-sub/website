@@ -2,4 +2,7 @@
   export let data;
 </script>
 
-<pre>{data.json}</pre>
+{#each data.jobs as job}
+  <div>{job.id}</div>
+{/each}
+
