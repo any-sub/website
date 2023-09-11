@@ -6,6 +6,7 @@ import { isMockEnabled } from '$lib';
 
 const service = axios.create({
 	baseURL: isMockEnabled() ? '/' : API_BASE_URL,
+	adapter: 'http',
 	transformRequest: [
 		(data, headers) => {
 			headers.set('CF-Access-Client-Id', CLOUDFLARE_ACCESS_ID);
