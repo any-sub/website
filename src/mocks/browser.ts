@@ -1,10 +1,11 @@
 import type { SetupWorker } from 'msw';
 import { setupWorker } from 'msw';
 import { routes } from './routes';
-import { browser, dev } from '$app/environment';
+import { browser } from '$app/environment';
+import { isMockEnabled } from '$lib';
 
 let worker: SetupWorker | null;
-if (browser && dev) {
+if (browser && isMockEnabled()) {
 	worker = setupWorker(...routes);
 } else {
 	worker = null;

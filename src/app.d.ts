@@ -6,9 +6,7 @@ declare global {
 		// interface Locals {}
 		// interface PageData {}
 		interface Platform {
-			env: {
-				PUBLIC_API_URL: string;
-			};
+			// env: {};
 			context: {
 				waitUntil(promise: Promise<unknown>): void;
 			};
