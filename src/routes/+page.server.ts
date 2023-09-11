@@ -6,6 +6,7 @@ export const load: PageServerLoad = async () => {
 		const { data: jobs } = await getJobs();
 		return { jobs };
 	} catch (e) {
+		console.error(e);
 		return { jobs: [] };
 	}
 };
