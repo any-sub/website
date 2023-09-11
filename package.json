@@ -41,5 +41,8 @@
 	"type": "module",
 	"msw": {
 		"workerDirectory": "static"
+	},
+	"dependencies": {
+		"@haverstack/axios-fetch-adapter": "0.8.0"
 	}
 }
