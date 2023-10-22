@@ -1,12 +1,11 @@
-import type { PageServerLoad } from './$types';
-import { getJobs } from '$lib/server/api';
+import { getAllUpdates } from '$lib/server/api';
+import type { ApiError } from '$lib/server/errors';
 
-export const load: PageServerLoad = async () => {
+export const load = async () => {
 	try {
-		const { data: jobs } = await getJobs();
-		return { jobs };
+		const { data: updates } = await getAllUpdates();
+		return { updates };
 	} catch (e) {
-		console.error(e);
-		return { jobs: [] };
+		return { error: (e as ApiError).message };
 	}
 };

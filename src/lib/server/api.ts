@@ -1,12 +1,15 @@
 import { API_BASE_URL, CLOUDFLARE_ACCESS_ID, CLOUDFLARE_ACCESS_SECRET } from '$env/static/private';
-import type { AxiosRequestConfig } from 'axios';
+import type { AxiosError, AxiosRequestConfig } from 'axios';
 import axios from 'axios';
-import type { Job } from '../../service/types';
+import type { Job, State } from '../../service/types';
 import { isMockEnabled } from '$lib';
 import fetchAdapter from '@haverstack/axios-fetch-adapter';
+import { ApiNetworkError, ApiNotFoundError } from '$lib/server/errors';
+import MockAdapter from 'axios-mock-adapter';
+import { mockRoutes } from '../../mocks/mock.routes';
 
 const service = axios.create({
-	baseURL: isMockEnabled() ? '/' : API_BASE_URL,
+	baseURL: API_BASE_URL,
 	adapter: fetchAdapter,
 	transformRequest: [
 		(data, headers) => {
@@ -17,4 +20,35 @@ const service = axios.create({
 	]
 });
 
-export const getJobs = (config?: AxiosRequestConfig) => service.get<Job[]>('/job', config);
+if (isMockEnabled()) {
+	const mockAdapter = new MockAdapter(service);
+	mockRoutes(mockAdapter);
+}
+
+service.interceptors.response.use(
+	(response) => response,
+	(error: AxiosError) => {
+		console.log(error.stack);
+
+		let reject;
+		switch (error.status) {
+			case 404:
+				reject = new ApiNotFoundError(error.message, { cause: error });
+				break;
+			default:
+				reject = new ApiNetworkError(error.message, { cause: error });
+				break;
+		}
+
+		return Promise.reject(reject);
+	}
+);
+
+export const getJobs = (config?: AxiosRequestConfig) => service.get<Job[]>('/jobs', config);
+export const getJob = (jobId: string, config?: AxiosRequestConfig) =>
+	service.get<Job[]>(`/jobs/${encodeURIComponent(jobId)}`, config);
+export const getUpdates = (jobId: string, config?: AxiosRequestConfig) =>
+	service.get<State[]>(`/jobs/${encodeURIComponent(jobId)}/state`, config);
+
+export const getAllUpdates = (config?: AxiosRequestConfig) =>
+	service.get<State[]>(`/states`, config);
