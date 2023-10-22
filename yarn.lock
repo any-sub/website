@@ -15,18 +15,6 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@auth/core@0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.13.0.tgz#87566254a103a9b6dcc43177fd50c9ab4ac2238f"
-  integrity sha512-StjrzUenaKfMr68kmvhiqfY0xvxRvg8wllmem9JAULpPAAAt3uwRUDXICWOP/PfWB4OZ2wQT7rgfm0n42b+Mjg==
-  dependencies:
-    "@panva/hkdf" "^1.0.4"
-    cookie "0.5.0"
-    jose "^4.11.1"
-    oauth4webapi "^2.0.6"
-    preact "10.11.3"
-    preact-render-to-string "5.2.3"
-
 "@auth/core@0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.14.0.tgz#d898cd87b47b4354d42e81e7d74c6274a19ad170"
@@ -39,12 +27,24 @@
     preact "10.11.3"
     preact-render-to-string "5.2.3"
 
-"@auth/sveltekit@0.3.7":
-  version "0.3.7"
-  resolved "https://registry.yarnpkg.com/@auth/sveltekit/-/sveltekit-0.3.7.tgz#ece7d5068ad244f56faeebcd3c00c17df3a11cab"
-  integrity sha512-2aIQbACu4F6oBUMgi9c1yCPVzOd3VQmMslk4y7U1Ec5A8CGstJfvMyL1N2J4zc3bemmvzhlrZ9ng0baKc695lg==
+"@auth/core@0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.17.0.tgz#1250174f4a11b3252a93c4664b06ae46ccd62bc0"
+  integrity sha512-YkbWuXny6sv0gF/sYm7KD3GxnnGxJomoQJzibzhJuwVOYjPUjjYBv/JMTkYcfpBuPHoHZwTVR3y1J+/W18oRxA==
   dependencies:
-    "@auth/core" "0.13.0"
+    "@panva/hkdf" "^1.0.4"
+    cookie "0.5.0"
+    jose "^4.11.1"
+    oauth4webapi "^2.0.6"
+    preact "10.11.3"
+    preact-render-to-string "5.2.3"
+
+"@auth/sveltekit@0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@auth/sveltekit/-/sveltekit-0.3.10.tgz#6d5a5653ed8152f4bde0f12277d4c58f4c06c064"
+  integrity sha512-VQKpEY5anPjD1kDc9bbNmNpCOuKJCNvmebKazxN5gwOFL9w5lAZLfTBp1ta10qj1CfjHPYlMrLTLI+jjN5KM3g==
+  dependencies:
+    "@auth/core" "0.17.0"
 
 "@cloudflare/workers-types@^4.20230404.0":
   version "4.20231016.0"
