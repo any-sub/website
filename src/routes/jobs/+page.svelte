@@ -5,8 +5,10 @@
   export let data: { jobs: Job[] };
 </script>
 
-{#each data.jobs as job}
-  <div>
-    <Anchor href="/jobs/{job.id}">{job.id}</Anchor>
-  </div>
-{/each}
+<ul>
+  {#each data.jobs as job}
+    <li>
+      <Anchor href="/jobs/{job.id}">{job.name} ({job.id})</Anchor>
+    </li>
+  {/each}
+</ul>

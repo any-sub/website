@@ -20,7 +20,7 @@
     </Card.Section>
 
     <Group position="apart" noWrap override={{ paddingBlock: '5px' }}>
-      <Text size="xl" weight={"500"} override={{ wordBreak: 'break-all' }}>{update.title}</Text>
+      <Text size="xl" weight={"500"} override={{ wordBreak: 'break-word' }}>{update.title}</Text>
     </Group>
 
     {#if update.description}

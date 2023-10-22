@@ -4,8 +4,14 @@ import type { Handle } from '@sveltejs/kit';
 import { redirect } from '@sveltejs/kit';
 import { AUTH_SECRET, GOOGLE_ID, GOOGLE_SECRET } from '$env/static/private';
 import { sequence } from '@sveltejs/kit/hooks';
+import { building } from '$app/environment';
 
 const authorization: Handle = async ({ event, resolve }) => {
+	// cloudflare build fix
+	if (building) {
+		return resolve(event); // bailing here allows the 404 page to build
+	}
+
 	// Protect any routes under /authenticated
 	const session = await event.locals.getSession();
 	if (!event.url.pathname.startsWith('/login')) {
