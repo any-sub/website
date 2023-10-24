@@ -27,12 +27,24 @@
     preact "10.11.3"
     preact-render-to-string "5.2.3"
 
-"@auth/sveltekit@0.3.10":
-  version "0.3.10"
-  resolved "https://registry.yarnpkg.com/@auth/sveltekit/-/sveltekit-0.3.10.tgz#6d5a5653ed8152f4bde0f12277d4c58f4c06c064"
-  integrity sha512-VQKpEY5anPjD1kDc9bbNmNpCOuKJCNvmebKazxN5gwOFL9w5lAZLfTBp1ta10qj1CfjHPYlMrLTLI+jjN5KM3g==
+"@auth/core@0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.18.0.tgz#9dfd8f6e8634d3c089af6afbbb4ecd146c882e1e"
+  integrity sha512-Xb41H3FIv4PlTZmwoFvntaNlVTwIqFxIg7i0/ieHOOxf/7H8EJpGTWoNrqKhwMyZEPU6fHp+VcUiqdX3vFrWSg==
   dependencies:
-    "@auth/core" "0.17.0"
+    "@panva/hkdf" "^1.0.4"
+    cookie "0.5.0"
+    jose "^4.11.1"
+    oauth4webapi "^2.0.6"
+    preact "10.11.3"
+    preact-render-to-string "5.2.3"
+
+"@auth/sveltekit@0.3.11":
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/@auth/sveltekit/-/sveltekit-0.3.11.tgz#69b5d351a0cce8e001a080e5731f5cac2371af72"
+  integrity sha512-SGGJe0BZsy/KqqyFgA056SbFZh2SvVQVU/GnPAg73PwkJZWxobba6KmeZM2OwECud21eQzXR8YggizwJmU1mzw==
+  dependencies:
+    "@auth/core" "0.18.0"
 
 "@cloudflare/workers-types@^4.20230404.0":
   version "4.20231016.0"
