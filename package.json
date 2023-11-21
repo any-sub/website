@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@auth/core": "0.18.3",
-		"@auth/sveltekit": "0.3.13",
+		"@auth/sveltekit": "0.3.14",
 		"@haverstack/axios-fetch-adapter": "0.8.0",
 		"@playwright/test": "1.40.0",
 		"@sveltejs/adapter-auto": "2.1.1",
