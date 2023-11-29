@@ -15,7 +15,7 @@
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
-		"@auth/core": "0.18.3",
+		"@auth/core": "0.18.4",
 		"@auth/sveltekit": "0.3.14",
 		"@haverstack/axios-fetch-adapter": "0.8.0",
 		"@playwright/test": "1.40.1",
