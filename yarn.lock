@@ -376,10 +376,10 @@
   resolved "https://registry.yarnpkg.com/@svelteuidev/composables/-/composables-0.15.4.tgz#cfb5afdc704f597ca369a451e60afd723e2bef7a"
   integrity sha512-GN7ZiUOCptgeLXs2HGcg6iuxo4aVeiV02tynofFNeVAFKSHX10FXhN1kWx8cDDJlW3/BjEP2qXa2qn4XrYNqTA==
 
-"@svelteuidev/core@0.15.3":
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/@svelteuidev/core/-/core-0.15.3.tgz#e34d2ec8e20ef51c8d9032c938db2c5d5d91e4e9"
-  integrity sha512-9Gg8UsWKptq0vN+w87MI4vgowd1W4w9YB0OB9hk3iBH0AoCMh/R0hwTwLOV3/arFnf+YHZp99nzfj86GEnA0LQ==
+"@svelteuidev/core@0.15.4":
+  version "0.15.4"
+  resolved "https://registry.yarnpkg.com/@svelteuidev/core/-/core-0.15.4.tgz#bf0bca5358b5f27ba3015f626c59aa21d5945328"
+  integrity sha512-TwGlFg3mlIMFKy+gm0+MzVF5DOU22coi4cT0wtcKCfV5oGzAkasAxhjLm+ZtUBb52b/lHgVDGv7bjmN7I17UUA==
   dependencies:
     "@floating-ui/dom" "1.2.8"
     "@stitches/core" "1.2.8"
