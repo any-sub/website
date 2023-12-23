@@ -206,10 +206,10 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.6.tgz#22958c042e10b67463997bd6ea7115fe28cbcaf9"
   integrity sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==
 
-"@haverstack/axios-fetch-adapter@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@haverstack/axios-fetch-adapter/-/axios-fetch-adapter-0.8.0.tgz#c9e80c29e565c65876c3312fa115d12f4cca4000"
-  integrity sha512-49/VcEVNusdkpaejbBx0EyESK2YR4L2oWfANp2FwYxJcE8gIfK86rcRhBt5RcGtZpTcfEwpflqyrT2S6yZnPDw==
+"@haverstack/axios-fetch-adapter@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@haverstack/axios-fetch-adapter/-/axios-fetch-adapter-0.12.0.tgz#a3cf27451123d4f772d638a251f1c24e9a13486d"
+  integrity sha512-+9WzqzeIvEC6Qrs6ImSqaX5P+eCrWbhzR+GoB7+p8/yqxmq59CPEo0uFuu0wINU9DQuJMzyER9WYdpYVwZV9rw==
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
