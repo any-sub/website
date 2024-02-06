@@ -28,10 +28,10 @@
     preact "10.11.3"
     preact-render-to-string "5.2.3"
 
-"@auth/core@0.25.1":
-  version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.25.1.tgz#f9991a0f6b20009b524b49d4473de69b3aa25632"
-  integrity sha512-Xt/0oV0ItS38BUeqc98LVYspoXSUifWS48BeEzWXkkdQgLcXEFnF008+CDLyZvnyv/zF4vahwJHeR/J5SK9RaA==
+"@auth/core@0.26.2":
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.26.2.tgz#29c9e1abc6ce3670b92453c0da52df0c2b2c5b85"
+  integrity sha512-BK+NaUDLcX8AMW/O32wxzk+SE9lr/xvjO4PsTgla9ToHHanoPMl+6pYu2/WoNKnZomdHBWOl/00LFfajuulIVA==
   dependencies:
     "@panva/hkdf" "^1.1.1"
     "@types/cookie" "0.6.0"
