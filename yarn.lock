@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@auth/core@0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.21.0.tgz#c1877afc9ffe1058b013216f02dde910b6921076"
-  integrity sha512-jUWYs8gjy2GvtP9dd/4S9KcwZ660Cm/IkybiAq96/2Ooku9SKk5SUG+UTEwkyLuaQ38ZgfwggfpDOgzsXEcufA==
+"@auth/core@0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@auth/core/-/core-0.29.0.tgz#764c3cf4ebfb4ab248f24a1ee18d67ae1c5e433b"
+  integrity sha512-MdfEjU6WRjUnPG1+XeBWrTIlAsLZU6V0imCIqVDDDPxLI6UZWldXVqAA2EsDazGofV78jqiCLHaN85mJITDqdg==
   dependencies:
     "@panva/hkdf" "^1.1.1"
     "@types/cookie" "0.6.0"
@@ -41,12 +41,13 @@
     preact "10.11.3"
     preact-render-to-string "5.2.3"
 
-"@auth/sveltekit@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@auth/sveltekit/-/sveltekit-0.7.0.tgz#fd9430edfeb84cf6f6f24125e184e804794bb692"
-  integrity sha512-RZIRMU4rb9n7ltIlMEB4bAflBexPwu6jxGnY7Wcz31c7QMO1skASRQEThI/FUZIzFxQqYn1OvDF6yGz0hWrMKg==
+"@auth/sveltekit@0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@auth/sveltekit/-/sveltekit-0.15.0.tgz#4342329c5fb78dbccfd954d65f35b3c9e227f975"
+  integrity sha512-fhV31dWhk5KvgoHtBOKwkrXMU9pB+zddwd/Rqujv7/qn8hEaRk/I/FSkR2xYKgfrdETwkUESJAPG6cTY+7Jt3Q==
   dependencies:
-    "@auth/core" "0.21.0"
+    "@auth/core" "0.29.0"
+    set-cookie-parser "^2.6.0"
 
 "@cloudflare/workers-types@^4.20230404.0":
   version "4.20231016.0"
