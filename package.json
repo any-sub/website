@@ -22,7 +22,7 @@
 		"@sveltejs/adapter-auto": "2.1.1",
 		"@sveltejs/adapter-cloudflare": "2.3.4",
 		"@sveltejs/kit": "1.30.4",
-		"@svelteuidev/composables": "0.15.5",
+		"@svelteuidev/composables": "0.15.6",
 		"@svelteuidev/core": "0.15.5",
 		"@typescript-eslint/eslint-plugin": "6.21.0",
 		"@typescript-eslint/parser": "6.21.0",
